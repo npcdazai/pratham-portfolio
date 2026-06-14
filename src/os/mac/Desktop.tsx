@@ -13,7 +13,9 @@ const WALLPAPER =
 
 function DesktopIcons() {
   const { open } = useOS()
-  const desktopApps = apps.filter((a) => ['about', 'projects', 'experience', 'resume'].includes(a.id))
+  const desktopApps = apps.filter((a) =>
+    ['about', 'projects', 'experience', 'resume', 'github', 'linkedin'].includes(a.id),
+  )
   return (
     <div className="absolute right-5 top-12 flex flex-col gap-5">
       {desktopApps.map((a) => (

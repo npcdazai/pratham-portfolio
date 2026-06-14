@@ -48,6 +48,27 @@ export function About() {
         </div>
       </div>
 
+      <div className="mt-5 flex flex-wrap gap-2">
+        {[
+          { label: 'LinkedIn', icon: '💼', href: profile.linkedin, accent: '#0a66c2' },
+          { label: 'GitHub', icon: '🐙', href: profile.github, accent: '#24292e' },
+          { label: 'Email', icon: '✉️', href: `mailto:${profile.email}`, accent: '#0a84ff' },
+        ].map((l) => (
+          <a
+            key={l.label}
+            href={l.href}
+            target={l.href.startsWith('http') ? '_blank' : undefined}
+            rel="noreferrer"
+            className="flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[13px] font-semibold transition hover:brightness-105 active:scale-95"
+            style={{ background: `${l.accent}14`, color: l.accent }}
+          >
+            <span>{l.icon}</span>
+            {l.label}
+            <span className="opacity-60">↗</span>
+          </a>
+        ))}
+      </div>
+
       <Section title="About">
         <p className="text-[14px] leading-relaxed text-neutral-600 text-balance">{profile.summary}</p>
       </Section>
@@ -214,8 +235,8 @@ export function Contact() {
   const links = [
     { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, icon: '✉️', accent: '#0a84ff' },
     { label: 'Phone', value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, '')}`, icon: '📞', accent: '#30d158' },
-    { label: 'LinkedIn', value: 'in/prathammandavkar', href: profile.linkedin, icon: '💼', accent: '#0a66c2' },
-    { label: 'GitHub', value: 'prathammandavkar', href: profile.github, icon: '🐙', accent: '#6e5494' },
+    { label: 'LinkedIn', value: 'in/pratham-m', href: profile.linkedin, icon: '💼', accent: '#0a66c2' },
+    { label: 'GitHub', value: 'npcdazai', href: profile.github, icon: '🐙', accent: '#6e5494' },
   ]
   return (
     <div className="px-7 py-7">

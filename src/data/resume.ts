@@ -5,8 +5,8 @@ export const profile = {
   location: 'Mumbai, India',
   phone: '+91 88303 33610',
   email: 'prathammandavkar932@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/prathammandavkar',
-  github: 'https://github.com/prathammandavkar',
+  linkedin: 'https://www.linkedin.com/in/pratham-m-0a4252341',
+  github: 'https://github.com/npcdazai',
   summary:
     'Full Stack Developer with 2.6+ years of experience building scalable, user-focused web and mobile applications for fast-paced fintech startups. Skilled in React.js, Next.js, React Native, Expo, and TypeScript, with backend experience in Node.js, Express.js, and message-queue systems (RabbitMQ, Redis). Hands-on experience managing AWS cloud infrastructure (EC2, S3, SES, CloudWatch, Security Groups) for reliable, scalable application deployment. Proven track record delivering complex fintech workflows including KYC/CKYC verification, e-signature processing, and loan aggregation across web, iOS, and Android platforms.',
 }
